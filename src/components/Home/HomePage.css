@@ -1,0 +1,53 @@
+/* Container to center the images and descriptions */
+.skills-section {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Flexbox layout for image containers with a shared background */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between images */
+  background-color: orange; /* Add orange background to the entire gallery */
+  padding: 20px; /* Add padding to create space around the images */
+  border-radius: 10px; /* Optional: Add rounded corners to the background */
+}
+
+/* Style for each image container */
+.image-container {
+  position: relative;
+  width: 150px; /* Set width for circular images */
+  height: 150px; /* Set height for circular images */
+  overflow: hidden; /* Hide overflow to keep the image circular */
+}
+
+/* Style for images */
+.home-img {
+  border-radius: 50%; /* Make images circular */
+  object-fit: cover; /* Maintain aspect ratio while covering container */
+  transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+  width: 100%; /* Ensure images fit container */
+  height: 100%; /* Ensure images fit container */
+}
+
+/* Hover effect to scale up the image */
+.image-container:hover {
+  transform: scale(1.1);
+}
+
+/* Style for image descriptions */
+.image-description {
+  text-align: center;
+  margin-top: 8px; /* Space between image and description */
+  font-size: 14px; /* Adjust font size if needed */
+}
+
+/* Center the h2 element vertically and horizontally */
+.skills-section h2 {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 7vh; /* Viewport height for vertical centering */
+  margin: 0; /* Remove default margins */
+}
