@@ -1,5 +1,7 @@
 import React from 'react';
 import './styles.css';
+import '../../styles/index.css';
+//Users/Sam/Downloads/My-Portfolio/src/styles/index.css
 
 const projects = [
   {

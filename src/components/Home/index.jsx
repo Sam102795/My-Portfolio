@@ -1,7 +1,6 @@
 import React from 'react'
 import Gallery from '../Gallery';
 import Buttons from '../Buttons';
-import Footer from '../Footer'; // Import the Footer component
 import './HomePage.css'; // Ensure this path is correct
 
 export default () => {

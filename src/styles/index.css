@@ -6,6 +6,21 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 100vh; /* Ensure body takes full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Flex layout to manage content and footer */
+}
+
+/* Ensure the content area grows to fill available space */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the root element takes full height */
+}
+
+/* Ensure the content area grows to fill available space */
+.content {
+    flex: 1; /* Allows content to grow and take up available space */
 }
 
 /* Styles for the main heading (h1) */
@@ -21,17 +36,14 @@ body {
     -webkit-text-stroke: 1px rgb(68, 95, 125); /* Adds a blue stroke to the text */
     pointer-events: none;
 }
-/* #contactUsPageTitle {
-    color: #6a5d19;
+
+/* Footer Styles */
+.footer {
+    background-color: #412e2e; /* Dark brown background for footer */
+    color: #eed9be; /* Light beige text color for footer */
     text-align: center;
-    text-shadow: 
-        -1px -1px 0 rgb(68, 95, 125),  
-         1px -1px 0 rgb(68, 95, 125),
-        -1px  1px 0 rgb(68, 95, 125),
-         1px  1px 0 rgb(68, 95, 125),
-         4px 4px 10px rgba(0, 0, 0, 0.5);
-    -webkit-text-stroke: 1px rgb(68, 95, 125);
-    pointer-events: none;
-} */
+    padding: 20px;
+    width: 100%;
+}
 
 

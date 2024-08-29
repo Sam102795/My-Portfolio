@@ -8,26 +8,28 @@ import Chatbox from './components/Chatbox';
 import ContactUs from './components/ContactUs';
 import Projects from './components/Projects';
 import About from './components/About';
-import Footer from './components/Footer';
+import Footer from './components/Footer'; // Import the Footer component
 
 function App() {
-
   return (
-    <>
-    <Router>
-      <NavBar/>
-      <Chatbox/>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="*" element={<Navigate to="/register" />} />
-        <Route path="/contactus" element={<ContactUs to="/contuctus" />} />
-        <Route path="/projects" element={<Projects to="/projects" />} />
-        <Route path="/about" element={<About to="/about" />} />
-      </Routes>
-    </Router>
-    </>
+    <div id="root">
+      <Router>
+        <NavBar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="*" element={<Navigate to="/register" />} />
+            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
+        <Chatbox />
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
