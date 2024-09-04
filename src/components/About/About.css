@@ -1,0 +1,61 @@
+/* Import the Noteworthy font if it's not already included */
+@import url('https://fonts.googleapis.com/css2?family=Noteworthy:wght@400;700&display=swap');
+
+.about-page-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.homePageTitle {
+    font-family: 'Noteworthy', sans-serif;
+    font-size: 2.5em; /* Adjust size as needed */
+    color: #6a5d19; /* Adjust color if needed */
+    text-shadow: 
+        -1px -1px 0 rgb(68, 95, 125),  
+         1px -1px 0 rgb(68, 95, 125),
+        -1px  1px 0 rgb(68, 95, 125),
+         1px  1px 0 rgb(68, 95, 125),
+         4px 4px 10px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 1px rgb(68, 95, 125);
+    margin-bottom: 20px;
+}
+
+.aboutus-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 40px; /* Space between content and bottom text */
+}
+
+.aboutus-img-container {
+    flex: 1;
+    padding-right: 20px; /* Add space between image and text */
+}
+
+.aboutus-img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.aboutus-text {
+    flex: 1;
+    font-family: 'Noteworthy', sans-serif; /* Apply the Noteworthy font */
+    font-size: 1.5em; /* Adjust the font size as needed */
+    line-height: 1.6; /* Increase line spacing */
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Add spacing from the top */
+    display: block; /* Ensure it behaves as a block element */
+}
+
+.aboutus-bottom-text {
+    font-family: 'Noteworthy', sans-serif; /* Apply the Noteworthy font */
+    font-size: 1.2em; /* Adjust font size as needed */
+    line-height: 1.5; /* Increase line spacing */
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px; /* Space between the text and page bottom */
+    color: #6a5d19; /* Dark yellow color for emphasis */
+    width: 50%; /* Match the width to the content */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
